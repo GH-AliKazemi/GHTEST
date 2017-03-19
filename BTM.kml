@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>نقشه گردشگری باکو</name>
+    <description>تهیه شده در استودیو هوشمند</description>
+    <Style id="icon-1899-E65100-nodesc-normal">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-E65100-nodesc-highlight">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-E65100-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-E65100-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-E65100-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-000000-5-normal">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-000000-5-highlight">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>8</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-000000-5">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-000000-5-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-000000-5-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Tours Places</name>
+      <Placemark>
+        <name>باکو</name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            49.8670924,40.4092617,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>طول مسیر بلوار باکو‎</name>
+        <description>کل مسیر بیش از 5700 متر</description>
+        <styleUrl>#line-000000-5</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            49.8610425,40.34589,0
+            49.8532534,40.3446634,0
+            49.8475671,40.3454321,0
+            49.8461723,40.3473618,0
+            49.8430181,40.3470674,0
+            49.8405075,40.3471656,0
+            49.8383832,40.3485883,0
+            49.8376107,40.3496349,0
+            49.8366666,40.3516136,0
+            49.8355937,40.3540583,0
+            49.8355079,40.3548554,0
+            49.8370099,40.3624381,0
+            49.8394822,40.3655131,0
+            49.8431433,40.3677944,0
+            49.8562038,40.3724783,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
