@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Baku Map</title>
+    <style>
+
+      #map {
+        height: 100%;
+      }
+
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+	  
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: {lat: 40.40926, lng: 49.86709}
+        });
+
+        var ctaLayer = new google.maps.KmlLayer({
+          url: 'https://github.com/GH-AliKazemi/GHTEST/blob/master/BTM.kml',
+          map: map
+        });
+      }
+	  
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjH48x-EWjOt9RDTbZcGXuRYQUNK5phlM&callback=initMap">
+    </script>
+  </body>
+</html>
